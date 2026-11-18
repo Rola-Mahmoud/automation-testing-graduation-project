@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AddUserPage {
     private WebDriver driver;
     private WebDriverWait wait;
+
     private By userRole = By.xpath("//label[text()='User Role']");
     private By employeeName = By.xpath("//label[text()='Employee Name']");
     private By userName = By.xpath("//label[text()='Username']");
@@ -47,7 +48,6 @@ public class AddUserPage {
     }
     public void clickFooterLink(){
         scrollToFooter();
-        //String originalWindow = driver.getWindowHandle();
         var footerLinkField = wait.until(ExpectedConditions.visibilityOfElementLocated(footerLink));
         footerLinkField.click();
     }

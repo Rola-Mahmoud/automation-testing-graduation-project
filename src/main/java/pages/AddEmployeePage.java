@@ -8,11 +8,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AddEmployeePage {
     private WebDriver driver;
     private WebDriverWait wait;
+
     private By firstName = By.name("firstName");
     private By lastName = By.name("lastName");
-    private By saveButton = By.xpath("//button[@type='submit' and normalize-space()='Save']");
-    private By firstNameRequiredMsg = By.xpath("//input[@name='firstName']/../following-sibling::span");
-    private By successMessage = By.xpath("//*[contains(.,'Successfully Saved')]");
+    private By saveButton = By.xpath(
+            "//button[@type='submit' and normalize-space()='Save']");
+    private By firstNameRequiredMsg = By.xpath(
+            "//input[@name='firstName']/../following-sibling::span");
+    private By successMessage = By.xpath(
+            "//*[contains(.,'Successfully Saved')]");
 
     public AddEmployeePage(WebDriver driver, WebDriverWait wait){
         this.driver = driver;
