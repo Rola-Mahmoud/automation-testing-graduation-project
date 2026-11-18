@@ -1,0 +1,35 @@
+[
+  {
+    "testcase": "validLogin",
+    "username": "Admin",
+    "password": "admin123"
+  },
+  {
+    "testcase": "invalidLogin",
+    "username": "wronguser",
+    "password": "wrongpass"
+  },
+  {
+    "testcase": "emptyFields",
+    "username": " ",
+    "password": " "
+  },
+  {
+    "testcase": "employeeSearch",
+    "employeeName": "Chris"
+  },
+  {
+    "testcase": "notEmployeeSearch",
+    "employeeName": "random"
+  },
+  {
+    "testcase": "emptyFirstName",
+    "firstName": " ",
+    "lastName": "Mahmoud"
+  },
+  {
+    "testcase": "addEmployee",
+    "firstName": "Rola",
+    "lastName": "Fawzy"
+  }
+]
